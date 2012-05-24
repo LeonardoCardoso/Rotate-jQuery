@@ -1,0 +1,27 @@
+{
+"name":"Rotate",
+"version":"0.1.6",
+"title":"Rotate",
+"keywords":["ui", "animation", "effect"],
+"author":"Leonardo Cardoso",
+"licences":[
+{
+"type":"MIT",
+"url":"http://www.opensource.org/licenses/mit-license.php"
+},
+{
+"type":"GPL",
+"url":"http://www.opensource.org/licenses/gpl-license.php"
+}
+],
+"maintainers":{
+"name":"Leonardo Cardoso",
+"email":"leo@leocardz.com",
+"url":"http://leocardz.com"
+},
+"dependencies":{
+"jquery":">=1.7"
+},
+"demo":"http://lab.leocardz.com/rotate-jquery/",
+"homepage":"http://lab.leocardz.com/rotate-jquery/"
+}
