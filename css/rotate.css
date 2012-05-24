@@ -1,0 +1,22 @@
+.rotate{
+	padding: 5px;
+}
+.rotate img{
+	width: 50px;
+	height: 50px;
+	vertical-align: -20px;
+}
+.rotate span{
+	font-size: 12px;
+}
+.table{
+	font-size: 12px;
+	margin: 5px;
+}
+.table i{
+	font-size: 14px;
+	font-weight: bold;
+}
+.table td{
+	padding: 5px;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Rotate - LeoCardz</title>
+		<link rel="stylesheet" class="cssStatics" type="text/css" href="css/stylesheet.css" />
+		<link rel="stylesheet" class="cssStatics" type="text/css" href="css/rotate.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/rotate.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#chrome').rotate();
+				$('#chromium').rotate({way: 'left', speed: 3});
+				$('#chrome1').rotate({way: 'left', event: 'mouseover'});
+				$('#chromium1').rotate({event: "click", way: 'right', speed: 15});
+				$('#chrome2').rotate({time: 1000, speed: 6}); 
+				$('#chromium2').rotate({event: "mouseover", degrees: 180, time: 10, speed: 5});
+				$('#rotate').rotate({event: "click", degrees: 90});		
+				
+				$('#chromeHour').rotate({clock: 'yes', hour: 'yes', time: 360000, speed: 15}); 
+				$('#chromeMinutes').rotate({clock: 'yes', minute: 'yes', time: 60000, speed: 6}); 
+				$('#chromeSeconds').rotate({clock: 'yes', second: 'yes', time: 1000, speed: 6}); 
+				
+			});
+		 </script>
+	</head>
+	<body >
+		<div class="bar">
+			<img src="img/leocardz.png" />
+		</div>
+		<div class="center" style="width: 59%">
+			<p>
+				<br />
+				
+				<div style="margin: auto; width: 640px; text-align: center; margin-bottom: 20px; font-family: Oswald">
+					Have you ever seen the time by a Chrome clock?!<br />
+					
+					<img id="chromeHour" src="img/chrome.png" /> 
+					<img id="chromeMinutes" src="img/chrome.png" /> 
+					<img id="chromeSeconds" src="img/chrome.png" /><br />
+					<span id='hour' ></span> : <span id='minute' ></span> : <span id='second' ></span>
+				</div>
+				
+				<table class="table" border="0" cellpadding="0" cellspacing="0" align="center" >
+					<tr >
+						<td width="150" style="border: 1px solid gainsboro; " >
+							<i>option</i>
+						</td>
+						<td width="150" style="border-top: 1px solid gainsboro; border-bottom: 1px solid gainsboro;" >
+							<i>default value</i>
+						</td>
+						<td width="150" style="border: 1px solid gainsboro; border-right: 0px;" >
+							<i>possible values</i>
+						</td>
+						<td width="250" style="border: 1px solid gainsboro;" >
+							<i>function</i>
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							event
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							click, mouseover
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							event which the animation will start at
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							way
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							right
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							right, left
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							animation way
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							time
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							0
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							any integer
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							performing time in milliseconds
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							speed
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							1
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							any integer
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							animation speed (how many pixels will be rotated at once)
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							degrees
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							any integer between 0 and 360
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							how many degrees to be rotated
+						</td>
+					</tr>		
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							clock
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							yes, no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							to assume the position of a clock
+						</td>
+					</tr>		
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							hour
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							yes, no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							clock hours
+						</td>
+					</tr>	
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							minute
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							yes, no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							clock minutes
+						</td>
+					</tr>	
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							second
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							yes, no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							clock seconds
+						</td>
+					</tr>		
+				</table>
+				<br /><br />
+				
+				<code>
+					<div class="rotate" >
+						<table>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<img id="chrome" src="img/chrome.png" /> 
+								</td>
+								<td>	
+									<span>$('#chrome').rotate(); </span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<img id="chromium" src="img/chromium.png" /> 
+								</td>
+								<td>	
+									<span>$('#chromium').rotate({way: 'left', speed: 3});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<img id="chrome1" src="img/chrome.png" /> 
+								</td>
+								<td>	
+									<span>$('#chrome1').rotate({way: 'left', event: 'mouseover'});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<img id="chromium1" src="img/chromium.png" /> 
+								</td>
+								<td>	
+									<span>$('#chromium1').rotate({event: "click", way: 'right', speed: 15});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<img id="chrome2" src="img/chrome.png" /> 
+								</td>
+								<td>	
+									<span>$('#chrome2').rotate({time: 1000, speed: 6}); </span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<img id="chromium2" src="img/chromium.png" /> 
+								</td>
+								<td>	
+									<span>$('#chromium2').rotate({event: "mouseover", degrees: 180, time: 10, speed: 5});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="50" align="center" >
+									<div id="rotate" style="background: blue; width: 40px; height: 30px;" ></div>
+								</td>
+								<td>
+									<span>$('#rotate').rotate({event: "click", degrees: 90});</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</code>
+			</p>
+		</div>
+	</body>
+</html>
