@@ -2,6 +2,7 @@
 "name":"Rotate",
 "version":"0.1.6",
 "title":"Rotate",
+"description":"Rotate whatever elements you want with jQuery",
 "keywords":["ui", "animation", "effect"],
 "author":"Leonardo Cardoso",
 "licences":[
